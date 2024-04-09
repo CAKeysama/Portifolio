@@ -218,11 +218,6 @@ body {
 	}
 }
 
-@media only screen and (min-width: 768px){
-	
-}
-
-
 /* Adicione estas classes para definir as animações */
 @keyframes fadeIn {
     from { opacity: 0; }
@@ -245,3 +240,105 @@ body {
     animation: fadeOut 1s ease forwards;
 }
 
+
+/* Estilos para tablets */
+@media only screen and (min-width: 768px){
+    .cabecalho .logo {
+        width: 80px;
+        height: 80px;
+        line-height: 65px;
+        font-size: 22px;
+    }
+
+    .cabecalho .menu li a {
+        font-size: 24px;
+    }
+
+    .home .informacoes h1 {
+        font-size: 60px;
+    }
+
+    .home .informacoes p {
+        font-size: 28px;
+    }
+
+    .home .redes-sociais a i {
+        width: 60px;
+        font-size: 32px;
+    }
+
+    .home .container-foto .foto {
+        max-width: 500px;
+    }
+
+    .projetos .titulo {
+        font-size: 60px;
+    }
+
+    .projetos .projeto {
+        max-width: 300px;
+        max-height: 600px;
+    }
+
+    .projetos .btn-mostrar-projetos {
+        width: 220px;
+        font-size: 22px;
+        padding: 25px;
+    }
+}
+
+/* Estilos para dispositivos móveis */
+@media only screen and (max-width: 767px) {
+    .cabecalho .logo {
+        width: 50px;
+        height: 50px;
+        line-height: 40px;
+        font-size: 18px;
+    }
+
+    .cabecalho .menu li a {
+        font-size: 18px;
+    }
+
+	.home {
+		gap: 0px;
+	}
+
+    .home .informacoes h1 {
+        font-size: 35px;
+    }
+
+    .home .informacoes {
+        max-width: 100%;
+        text-align: center; 
+    }
+
+    .home .redes-sociais {
+        display: flex;
+        justify-content: center; /* Centraliza os ícones horizontalmente */
+    }
+
+    .home .redes-sociais a i {
+        width: 40px;
+        font-size: 20px;
+    }
+
+    .home .container-foto .foto {
+		display: none;
+	}
+
+    .projetos .titulo {
+        font-size: 40px;
+    }
+
+    .projetos .projeto {
+        max-width: 200px;
+        max-height: 400px;
+    }
+
+    .projetos .btn-mostrar-projetos {
+        width: 150px;
+        font-size: 16px;
+        padding: 15px;
+    }
+}
